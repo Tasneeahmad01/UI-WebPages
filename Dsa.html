@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.5/axios.min.js" integrity="sha512-01Pe9P3mJM/4c80VuoYEGHlspKGbd9uWQe9HtdLsdTqV0CS1kz8ca44sinVEXEvlZNciMmsAjeEbm5ZxHC7yYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ </head>
+ <body>
+    <h1 onclick="myfun()">TEST API IMG</h1>
+    <button >Get Img</button>
+    <br>
+    <img id="result" alt="Random Dog Image" width="500px">
+    <script>
+        document.querySelector("button").addEventListener("click", async () => {
+            try {
+                let res = await axios("https://dog.ceo/api/breeds/image/random");
+                document.querySelector("#result").src = res.data.message;
+            } catch (e) {
+                console.error("ERROR", e);
+            }
+        });
+        </script>
+ </body>
+ </html>

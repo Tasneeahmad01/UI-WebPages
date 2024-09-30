@@ -1,0 +1,115 @@
+.footer {
+  background-color: #8e5e37;
+  color: #fff;
+  padding: 30px 20px;
+  padding-inline: 50px;
+
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  width: calc(33.333% - 10px);
+}
+
+.brand-info h2 {
+  margin: 0;
+  color: #bfe987;
+  font-size: 2rem;
+}
+
+.brand-info p {
+  font-size: 0.9rem;
+  color: #fff;
+  line-height: 1.5rem;
+}
+
+.links a {
+  display: grid;
+  color: #fff;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  width: 50px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  padding-left: 50px;
+  text-align: center;
+   
+}
+.links a:hover{
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.newsletter h3 {
+  margin: 0 0 10px 0;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.newsletter p {
+  font-size: 0.9rem;
+  color: #e9b2b2;
+}
+
+.newsletter form {
+  display: flex;
+}
+
+.newsletter input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 8px;
+}
+
+.newsletter button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #f2c87e;
+ 
+}
+hr{
+margin-top: 50px;  
+margin-bottom: 20px;  
+border: none;  
+height: 4px; 
+background-color: #3333; 
+}
+.Icons a{
+  text-decoration: none;color: #fff;
+}
+.Icons i{
+  font-size: 2rem;
+  margin-top: 50px;
+  padding: 10px;
+}
+.fa-x-twitter,
+.fa-youtube,
+.fa-instagram,
+.fa-facebook{
+background-color:transparent;
+margin: 5px;
+border-radius: 10px;
+cursor: pointer;
+color: #faad56;
+}
+
+.fa-x-twitter:hover,
+.fa-youtube:hover,
+.fa-instagram:hover,
+.fa-facebook:hover{
+ color: #bfe987;
+}
+ 

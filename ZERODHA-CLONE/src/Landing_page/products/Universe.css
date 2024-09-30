@@ -1,0 +1,48 @@
+/* Universe.css */
+.zfh-logo, .streak-logo, .sensibull-logo, .smallcase-logo, .goldenpi-logo, .ditto-logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .text-12 {
+    font-size: 0.75rem; 
+  }
+  
+  .col-md-4 a{
+    color: #9B9B9B;
+    font-family: "Inter", sans-serif,Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .btn-primary:hover{
+    background-color: #1f1e1e;
+    border: 1cd px solid #1f1e1e;
+    cursor: pointer;
+  }
+  img{
+    object-fit: cover;
+  }
+ h5 ,h2{
+  color: #424242;
+  font-weight: 400;
+ }
+  p{
+    color:#424242;
+  }
+  .text:hover{
+    color:#424242;
+  }
+  .founder{
+    padding-left: 30%;
+    line-height: 40px;
+  }
+  
+
+  @media (max-width: 767px) {
+    .hide-on-mobile {
+      display: none;
+    }
+     
+    
+  }
+  

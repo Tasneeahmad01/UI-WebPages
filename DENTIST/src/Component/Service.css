@@ -1,0 +1,103 @@
+
+   .dental-service {
+    text-align: center;
+    padding: 10px;
+    padding-inline: 50px;
+  }
+  .video-section {
+    margin-top: 50px;
+    display: flex;
+    border: 2px solid red;
+    width: 70%;
+    margin-left: 100px;
+  }
+  .dental-service h4 {
+    font-size: 2rem;
+    color: #fa9191;
+  }
+  
+  .service-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .service-item {
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-right: 20px;
+    width: 270px;
+    box-shadow: 0 4px 8px rgba(20, 15, 5, 0.2);
+   
+  }
+  
+  .service-item img {
+    width: 90%;
+    border-radius: 8px;
+    height: 220px;
+    object-fit: cover;
+     padding-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .service-item h3 {
+    margin: 10px 0;
+  }
+  
+  .service-item p {
+    color: #555;
+    text-align: center;
+    align-items: center;
+    padding-inline: 10px;
+  }
+  .service-item button{
+    margin-bottom: 10px;
+    padding:12px;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+    border: 1px solid lightblue;
+  }
+  .service-item button:hover{
+    background-color: #d2f4ff;
+  }
+   
+  .author-bio-section-thumbnail {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    margin-top: 50px;
+    width: 60%;
+    align-items: center;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(20, 15, 5, 0.2);
+  }
+  
+  .authorImage img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .authorInfo {
+    margin-left: 20px;
+  }
+  
+  .authorInfo h3 a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .authorInfo h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  .authorInfo p {
+    color: #555;
+  }
+  

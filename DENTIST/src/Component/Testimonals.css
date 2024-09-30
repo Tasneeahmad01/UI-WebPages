@@ -1,0 +1,117 @@
+  .middle{
+    margin-top: 40px;
+    text-align: center;
+ }
+ .middle h1{
+    color:#fa9191;
+    font-size: 2.2rem;
+    margin: 10px 0;
+ }
+.main {
+    padding: 40px 20px;
+    background-color: #f8ffff;
+    text-align: center;
+    margin:15px;
+  }
+  
+  /* Header styling */
+  .middle {
+    margin-bottom: 20px;
+  }
+  
+  .middle span {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Testimonials container */
+  .testimonials-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Individual testimonial card */
+  .testimonials-card {
+    background-color: #f2feff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(124, 73, 92, 0.4);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+   .testimonials-card:hover{
+    transform: translateY(-10px);
+  background-color: 0 4px 8px rgba(124, 73, 92, 0.10);
+  cursor: pointer;
+   }
+  /* Image styling */
+  .testimonials-card img {
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  /* Name styling */
+  .testimonials-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Feedback text styling */
+  .testimonials-card h5 {
+    font-size: 16px;
+    color: #777;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+  
+
+  /* styles.css */
+
+
+  .table-container {
+    width: 50%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  margin-left: 20px;
+  }
+  td{
+    color: #7D8693;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    color: #808080;
+  }
+  
+  tr:hover {
+    background-color: #f2f2f2;
+  }
+  .H3{
+    background-color: #60a9e5;
+    color: white;
+    padding: 7px;
+    font-weight: bold;
+  }
+  

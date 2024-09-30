@@ -1,0 +1,58 @@
+
+.main-about h1 {
+  margin: 30px;
+  text-align: center;
+  font-size: 3rem;
+  color: #ffa646;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+ margin-inline: 80px;
+
+}
+
+.content-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  overflow-x: hidden;
+}
+.main-about{
+  background-color: #f4ffff;
+}
+
+.main-content {
+
+  display: flex;
+  align-items: center; 
+}
+
+.main-content img {
+  width: 150px; 
+  height: auto;
+  margin-right: 20px;  
+  border: 1px solid lightgray;
+ 
+}
+
+.main-content p {
+  width: 75%; 
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.middle-about{
+  display: flex;
+  justify-content: center;
+  margin-inline: 50px;
+}
+.middle-about img{
+  width: 100%;
+  height: 650px;
+  align-items: center;
+  object-fit: cover;
+margin-bottom: 50px;
+}
+

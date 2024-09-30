@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+  padding-top: 100px; 
+}
+
+.main {
+  width: 100%;
+  background-color: #081c15;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.main-jweller {
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 1000;  
+  background-color: #081c15; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding-inline: 50px;  
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(240, 219, 127);
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 50px; 
+}
+
+.nav-links a:hover {
+  color: rgb(250, 190, 158);
+}
+
+.login-out {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.login-out a {
+  text-decoration: none;
+  color: #eaffa6;
+  margin-right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;  
+  }
+
+  .nav-links {
+    display: none; /* Hidden by default on mobile */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: #081c15;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    display: flex; /* Shown when menu is toggled */
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(240, 219, 127);
+  }
+
+  .login-out {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #081c15;
+    padding: 10px 0;
+  }
+
+  .fa-bars {
+    display: flex;
+    cursor: pointer;
+    font-size: 24px;
+    color: #eaffa6;
+  }
+
+  .navbar img {
+    padding-inline: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* Hide fa-bars on larger screens */
+@media (min-width: 769px) {
+  .fa-bars {
+    display: none;
+  }
+}

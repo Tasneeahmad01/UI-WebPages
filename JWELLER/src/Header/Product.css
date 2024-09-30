@@ -1,0 +1,95 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.jewelry-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.jewelry-section h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.jewelry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.jewelry-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.jewelry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(246, 86, 86, 0.2);
+}
+
+.jewelry-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.jewelry-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.jewelry-details h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.jewelry-details p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  background-color: #ff4081;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #e0356f;
+}
+.more-item{
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.Item{
+  background-color: #07bfff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
