@@ -33,6 +33,8 @@ btn.addEventListener("click", () => {
     .then(data => jokeContainer.textContent = data.joke)
     .catch(() => jokeContainer.textContent = "Couldn't fetch a joke.");
 });
+
+
 // Show form in 
 const input = document.getElementById("name");
 const email = document.getElementById("email");
