@@ -1,0 +1,100 @@
+
+  
+  .toggle-btn {
+    padding: 0rem 1.2rem;
+    border-radius: 0.3rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border: 0;
+    background-color: hsl(160, 80%, 48%);
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+    margin-left: 1.2rem;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    
+  }
+  
+  .toggle-btn:hover {
+    background-color: hsl(160, 80%, 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(9, 172, 115) 0px 7px 19px 0px;
+  }
+  
+  /* ================================================ */
+  
+  .list {
+    width: 80%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: center;
+    margin-top: 2rem;
+  
+    & .list-item {
+      background-color: #fff2dd;
+      padding: 1.6rem;
+      border-radius: 0.3rem;
+      -webkit-border-radius: 0.3rem;
+      -moz-border-radius: 0.3rem;
+      -ms-border-radius: 0.3rem;
+      -o-border-radius: 0.3rem;
+      list-style-position: inside;
+      border-left: 2px solid red;
+      list-style: none;
+      
+    }
+  
+    & .toggle-btn {
+      background-color: #e74c3c;
+      color: #fff;
+  
+      &:hover {
+        color: hsl(0, 0%, 100%);
+        box-shadow: rgb(167, 54, 13) 0px 7px 19px 0px;
+      }
+    }
+  }
+  
+  /* //extra adding accordion-grid */
+  
+  .accordion-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .accordion-question {
+    font-weight: bold;
+    font-family: "Syne";
+    letter-spacing: 0.1rem;
+    font-size: 1.7rem;
+  }
+  
+  @media screen and (max-width: 980px) {
+    .section-form form {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .section-post ol {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .section-post ol {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
