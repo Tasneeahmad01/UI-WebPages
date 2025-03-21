@@ -1,0 +1,18 @@
+.img{
+    border: 2px solid red;
+    padding: 2px;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.containers{
+    display: grid;
+    color: pink;
+    background-color: black;
+    padding-right: 20px;
+    align-items: center;
+}

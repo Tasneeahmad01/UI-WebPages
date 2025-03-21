@@ -23,14 +23,17 @@ const App = () => {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<>
+          <Route path="/" element={
+            <>
             <Hero />
             <Cards />
             <AboutUs />
             <ChooseUs />
             <Testimonials />
             <FeeForm/>
-          </>} />
+          </>
+        } 
+        />
           <Route path="/" element={<Home />} />
           <Route path="/service" element={<Service />} />
           <Route path="/about-us" element={<About />} />

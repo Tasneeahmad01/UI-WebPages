@@ -1,0 +1,359 @@
+/* Container styling */
+.Container {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.Container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Profile section */
+.prof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+}
+
+.prof img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.prof h4 {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.prof p {
+    font-size: 1rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+/* Payment section */
+.payment {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 15px;
+}
+.payment a{
+    text-decoration: none;
+}
+.payment h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: transparent;
+    cursor: text;
+    display: inline;
+}
+
+.payment h5:hover {
+    color: #007BFF;
+    border-bottom: 3px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-bottom: 5px;
+     
+}
+
+.payment a {
+    display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .prof {
+        width: 90%;
+    }
+
+    .Container h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/*PAYMENTMETHOD FILE CSS*/
+
+.payment-method-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e0edb6;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.payment-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.payment-label:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+input[type='radio'] {
+    accent-color: #007bff;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* HISTORY METHOD USER */
+
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e9edc9;
+    max-width: 1500px; /* Adjust the width */
+    margin: 0 auto;
+  }
+  
+  .user-card {
+    background: #f8fdd5;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 220px; /* Adjust the card width */
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-5px);
+    border: 2px solid red;
+    transition:none;
+  }
+  
+  .user-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .history-title{
+    margin-top: 55px;
+    text-align: center;
+    background:#eca07c; 
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 3rem;
+}
+  
+  @media (min-width: 1200px) {
+    .users {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      justify-content: center;
+    }
+  }
+  
+  /* Adjust layout for smaller screens */
+  @media (max-width: 900px) {
+    .users {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .users {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* ITEMS METHOD */
+  .Items{
+    display: flex;
+    padding: 10px 0px;
+    gap: 30px;
+    justify-content: center;
+  }
+  .Items img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius:50% ;
+    justify-content: space-between;
+  }
+  /* RATING START CSS  */
+  .rating-container {
+    display: flex;
+    justify-content: flex-start; /* Left align */
+    align-items: flex-start; /* Start se align */
+    gap: 100px;
+    margin: auto;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+  }
+  
+  .right-section {
+    flex: 2;
+    text-align: left;
+    margin-top: 20px;
+    line-height: normal;
+  }
+  .right-section h6{
+    align-items: flex-start;
+  }
+  .part{
+    background-color: #bab5b5;
+    width: 500px;
+    height: 50px;
+    padding: 0 auto;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
+  }
+  .Btn{
+    width: 350px;
+    height: 35px;
+    border-radius: 20px;
+    border: 2px solid #bab5b5;
+    background: #fff;
+  }
+ /* REVIEWS ITEMS */
+ 
+
+ .reviews-container {
+  max-width: calc(100% - 900px);  
+  margin: 0 auto;                 
+  padding: 40px 20px;
+   
+}
+
+/* Title styling */
+.title {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Wrapper for reviews */
+.reviews-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  
+}
+
+/* Individual review card */
+.review-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* Center-align content horizontally */
+  border-bottom: 2px solid #ddd;
+  border-radius: 8px;
+  width: 100%;               
+  max-width: 1100px;          
+   padding: 10px;
+}
+
+/* Image styling */
+.review-img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+  
+}
+
+/* Review content styling */
+.review-content {
+  flex: 1;
+}
+
+.review-title {
+  font-size: 30px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.review-descrip {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1600px) {
+  .reviews-container {
+    max-width: 1000px;        /* Reduce width for medium screens */
+  }
+}
+
+@media (max-width: 1200px) {
+  .reviews-container {
+    max-width: calc(100% - 200px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .review-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+}

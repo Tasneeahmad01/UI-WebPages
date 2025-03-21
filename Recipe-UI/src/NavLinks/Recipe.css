@@ -1,0 +1,85 @@
+/* Recipe Component Styles */
+
+  
+  .msge {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    background: #fff;
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+  }
+  
+  .msge img {
+    width: 330px;
+    height: 400px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #dee2e6;
+   
+  }
+  
+  .infom {
+    flex: 1;
+  }
+  
+  .infom h1 {
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 1rem;
+  }
+  
+  .infom .btn-dark {
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .infom .btn-dark:hover {
+    background-color: #ff6347;
+  }
+  
+  .infom h3 {
+    font-size: 1.5rem;
+    color: #495057;
+    margin-top: 1.5rem;
+  }
+  
+  .infom p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #000;
+   font-family:  Arial, sans-serif;
+  }
+  
+  @media (max-width: 768px) {
+    .msge {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .msge img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .infom h1, .infom h3, .infom p {
+      text-align: center;
+    }
+  
+    .infom .btn-dark {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  

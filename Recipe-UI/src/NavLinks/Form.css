@@ -1,0 +1,13 @@
+   .main-div{
+    background: url('https://img.freepik.com/premium-photo/various-fast-food-items-ready-eat-captured_961875-48057.jpg?w=1060') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+   }
+   .main-div input{
+    gap: 50px;
+    line-height: 1.8rem;
+    color: darkcyan;
+    justify-content: center;
+
+   }

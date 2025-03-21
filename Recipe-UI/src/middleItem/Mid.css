@@ -1,0 +1,46 @@
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.cards p{
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #9c9c9c;
+}
+.order{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 30px; */
+}
+.order-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    margin-top: 30px;
+}
+
+.order-item img{
+width: 250px;
+height: 250px;
+object-fit: cover;
+border-radius: 50%;
+border: 2px solid rgb(255, 165, 0); 
+padding: 5px;
+}
+.order-item h2{
+    text-align: center;
+    margin-top: 15px;
+    align-items: center;
+}
+.order-item button{
+    border:none;
+    text-align: center;
+    padding: 10px 20px;
+    color: crimson;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background-color: #fef2e4; ;
+}
+ 

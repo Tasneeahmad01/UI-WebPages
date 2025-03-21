@@ -1,0 +1,209 @@
+body{
+    background-color: #cef4ff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid yellow;
+    border-style: dotted;
+    font-size: 1rem;
+    cursor: pointer;
+}
+/* Container for form */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form labels */
+  form label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  /* Form input fields */
+  form input[type="text"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Submit button */
+  form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for displayed entries */
+  .showDataStyles {
+    margin-top: 10px;
+    padding: 20px;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f667ae;
+    display: flex;
+    max-width: 600px;
+    justify-content: space-between;
+  }
+  
+
+
+  /* General container styling */
+.container-fluid {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card Styling */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Avatar Image */
+.card img {
+  width: 70px;
+  height: 100px;
+  /* border-radius: 50%; */
+  object-fit: cover;
+}
+
+/* Text beside the image */
+.card h5 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.card .role {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Stats Section */
+.stats {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  background-color: #e9f8f9;
+  padding: 2px;
+  border-radius:20px;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.stats h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 5px 0 0;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .card {
+      margin: 10px 0;
+  }
+
+  .stats {
+      flex-direction: column;
+      gap: 10px;
+  }
+}
+.Image{
+  width:100px;
+  height: 100px;
+  border-radius: 30px;
+}
+.eachItem{
+  width: 100px;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between
+}
+.Add Todo i{
+  font-size: 100px;
+}
+
+.container {
+  text-align: center; /* Center the headings */
+  margin-top: 20px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center; /* Align items horizontally */
+  align-items: center; /* Align items vertically */
+  margin-top: 20px;
+  gap: 10px; /* Add space between elements */
+}
+
+.quantity__minus,
+.quantity__plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.quantity__input {
+  width: 60px;
+  height: 40px;
+  text-align: center; /* Align text in the middle */
+  font-size: 18px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+  pointer-events: none; /* Prevent manual editing */
+}
