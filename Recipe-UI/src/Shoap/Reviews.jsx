@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 const Reviews = () => {
+  const [Allitem,setAllItem]=useState(false)
   const products = [
     {
       img: "https://static.ffx.io/images/$zoom_0.252%2C$multiply_0.3492%2C$ratio_1.5%2C$width_756%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/bf745fec280e15aa4258fc892037533bb4e46fa0",
@@ -49,12 +50,12 @@ const Reviews = () => {
       descrip: "Fresh sushi rolls served with spicy wasabi, tangy soy sauce, and pickled ginger slices."
     }
   ];
-
+ const ShowImage=Allitem?products:products.slice(0,8)
   return (
     <div className="reviews-container">
       <h1 className="title">Reviews</h1>
       <div className="reviews-wrapper">
-        {products.map((item, index) => (
+        {ShowImage.map((item, index) => (
           <div key={index} className="review-card">
             <img src={item.img} alt={item.title} className="review-img" />
             <div className="review-content">
@@ -64,7 +65,7 @@ const Reviews = () => {
           </div>
         ))}
       </div>
-      <button className='text-center btn btn-danger'>Show more</button>
+      <button className='text-center btn btn-danger mt-3' onClick={()=>setAllItem(!Allitem)}>{Allitem?'Show Less':'Show more'}</button>
     </div>
   );
 };

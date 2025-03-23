@@ -106,18 +106,122 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-  }
-  
-  .recipe img {
+    padding: 20px;
+}
+
+/* For larger screens */
+.recipe img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: top center;  
+    object-position: top center;
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .recipe img:hover {
+}
+
+.recipe img:hover {
     transform: scale(1.1);
-  }
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 992px) {
+    .recipe img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 768px) {  
+    .recipe img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 576px) {  
+    .recipe img {
+        width: 75px;
+        height: 75px;
+    }
+}
+/* PRODUCTITM CSS */
+/* Main container styling */
+.Main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-bottom: 2rem;
   
+}
+
+.Title {
+  font-size: 45px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Card container */
+.Card-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid red;
+  border-radius: 8px;
+  overflow: hidden;
+ padding: 20px;
+
+}
+
+
+/* Image styling */
+.Card-image {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Content styling */
+.Card-content {
+  padding: 20px;
+  flex: 1;
+}
+
+/* Title styling */
+.Card-title {
+  font-size: 35px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Caption styling */
+.Card-caption {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .Card-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Card-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .Card-title {
+    font-size: 18px;
+  }
+
+  .Card-caption {
+    font-size: 14px;
+  }
+}

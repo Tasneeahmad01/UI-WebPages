@@ -1,5 +1,6 @@
 import React from 'react';
 import './Chicke.css'
+import Productitm from './Productitm'
 const UserRecipe = () => {
   const recipe = [
     { img: 'https://i.guim.co.uk/img/media/68a706e616cce073b03b8009e5425cc59e9e703d/0_705_2792_2416/master/2792.jpg?width=465&dpr=1&s=none&crop=none' },
@@ -22,10 +23,10 @@ const UserRecipe = () => {
             alt={`recipe-${index}`} 
            
           />
-        </div>
-       
+        </div>       
       ))}
        </div>
+       <Productitm/>
     </div>
   );
 };
