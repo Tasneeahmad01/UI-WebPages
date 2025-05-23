@@ -92,3 +92,27 @@ code {
 .head{
     text-align: center;
 }
+.setup {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.circle-img img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 2px solid #ffcbcb;
+  padding: 2px;
+  cursor: pointer;
+}
+.circle-img img:hover{
+   transform: scale(1.08); 
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3); 
+  z-index: 10; 
+}
+
+

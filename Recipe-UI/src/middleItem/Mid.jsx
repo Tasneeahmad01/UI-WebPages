@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Mid.css';
-
+import Random from './Random'
 const items = [
   {
     img: 'https://img.freepik.com/free-photo/view-tasty-food-from-around-world_23-2151596620.jpg?t=st=1741494873~exp=1741498473~hmac=dcdc1bd96456ce0aa9bbe5859c88aafc7f7739f5dfe4dc11c5247a0b2ff72a24&w=740',
@@ -35,6 +35,7 @@ const Mid = () => (
         </div>
       ))}
     </div>
+    <Random/>
   </div>
 );
 

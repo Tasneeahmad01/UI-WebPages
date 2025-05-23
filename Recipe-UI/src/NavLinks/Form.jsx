@@ -6,12 +6,12 @@ const Form = () => {
   
     const handleSubmit = (e) => {
         e.preventDefault();
-        setOrderSubmit();
+        setOrderSubmit(true);
     }
     return (
         <div style={{ textAlign: 'center', marginTop: '50px',  }} className='main-div'>
             {orderSubmit ? (
-                <h2>Your Order Finally Submitted</h2>
+                <h2 className='order'>Your Order Finally Submitted</h2>
             ) : (
                 <>
                     <h2>Booking Order</h2>

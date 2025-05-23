@@ -1,4 +1,3 @@
-
 /* Navbar Styles */
 .navbar {
   display: flex;
@@ -11,7 +10,7 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  /* margin-bottom: 50px;  */
+  box-sizing: border-box;
 }
 
 .navbar a {
@@ -23,9 +22,10 @@
   font-size: 30px;
   font-weight: bold;
 }
-.logo span{
+
+.logo span {
   color: goldenrod;
-  font-family: cursive,Arial, Helvetica, sans-serif;
+  font-family: cursive, Arial, Helvetica, sans-serif;
 }
 
 .nav-links {
@@ -53,33 +53,11 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    /* right: 20px; */
-    width: 100%;
-    height: 1200px;
-    text-align: center;
-    padding: 30px;
-    border-radius: 8px;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
+/* Adjusting login icon padding */
+.login-icon {
+  padding-right: 30px;
 }
-.login-icon{
-  padding-right: 50px;
-   
-}
+
 .login-icon i {
   font-size: 20px;
   color: #ff6347;
@@ -92,5 +70,63 @@
   font-size: 20px;
   color: goldenrod;
   text-decoration: none;
-   
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 30px;
+    border-radius: 8px;
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links a {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+
+  .login-icon {
+    padding-right: 15px; /* Adjust for mobile */
+  }
+
+  .login-icon i {
+    font-size: 24px; /* Slightly bigger icon for mobile */
+  }
+}
+
+/* For very small screens like mobile (portrait) */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 25px; /* Reduce logo size on very small screens */
+  }
+
+  .nav-links a {
+    font-size: 1.3rem;
+  }
+
+  .menu-toggle {
+    font-size: 28px;
+  }
 }

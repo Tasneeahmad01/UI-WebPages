@@ -53,7 +53,7 @@ const Reviews = () => {
  const ShowImage=Allitem?products:products.slice(0,8)
   return (
     <div className="reviews-container">
-      <h1 className="title">Reviews</h1>
+      <h1 className="title"style={{color:"#CC5522"}}>Reviews</h1>
       <div className="reviews-wrapper">
         {ShowImage.map((item, index) => (
           <div key={index} className="review-card">

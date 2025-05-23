@@ -14,7 +14,7 @@ import Account from './Shoap/Account';
 import PaymentMethod from './Shoap/PaymentMethod';
 import History from './Shoap/History';
 import Error from './Error';
-
+import Footer from './Footer' 
 const App = () => {
   return (
     <Router>
@@ -23,7 +23,7 @@ const App = () => {
       <div className="App">
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/chicken" element={<ChickenPage />} />
+          <Route path="/chicken" element={<ChickenPage/>}/>
           <Route path="/:meal" element={<Recipe/>}/>
           <Route path ="/form" element={<Form/>}/>
           <Route path="/fastfood" element={<FastPage/>}/>
@@ -37,7 +37,7 @@ const App = () => {
          <Route path ="/*" element = {<Error/>}/>
         </Routes>
       </div>
-      
+      <Footer/>
     </Router>
   );
 };
