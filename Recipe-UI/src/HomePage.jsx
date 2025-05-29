@@ -19,10 +19,10 @@ const stats = [
 ];
 
 const products = [
-  { img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6_waGxF23cvFNZbvaL7PQhFrLnaLZZcDpgw&s', title: 'Product #1', desc: 'Delicious grilled shrimp' },
-  { img: 'https://c4.wallpaperflare.com/wallpaper/529/413/206/food-hamburger-fast-food-junk-food-wallpaper-preview.jpg', title: 'Product #2', desc: 'Fresh crab delight' },
-  { img: 'https://c4.wallpaperflare.com/wallpaper/443/406/532/5c1c925cd8929-wallpaper-preview.jpg', title: 'Product #3', desc: 'Smoked salmon slices' },
-  { img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimxUEKLJ851WU1Wo70zIowrOe1eAxwGHfdA&s', title: 'Product #4', desc: 'Spicy seafood mix' }
+  { img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6_waGxF23cvFNZbvaL7PQhFrLnaLZZcDpgw&s', title: 'Shrim Pizza', desc: 'Delicious grilled shrimp' },
+  { img: 'https://c4.wallpaperflare.com/wallpaper/529/413/206/food-hamburger-fast-food-junk-food-wallpaper-preview.jpg', title: 'Butter Burger', desc: 'Fresh crab delight' },
+  { img: 'https://c4.wallpaperflare.com/wallpaper/443/406/532/5c1c925cd8929-wallpaper-preview.jpg', title: 'Smoked Chilli Burger', desc: 'Smoked salmon slices' },
+  { img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimxUEKLJ851WU1Wo70zIowrOe1eAxwGHfdA&s', title: 'White Butter Sandwhich', desc: 'Spicy seafood mix' }
 ];
 
 const HomePage = () => (
